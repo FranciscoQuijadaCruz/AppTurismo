@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbTituloG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgPrincipalG"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:scaleType="fitXY" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPrincipalUnoG"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:id="@+id/imgPrincipalDosG"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbDescripcionG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFFFF"
+            android:text="Lorem ipsum dolor sit amet...
+"
+            android:textAlignment="center"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/lbRedes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Contactos"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnwhaa"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/whaaicon" />
+
+            <ImageButton
+                android:id="@+id/btnfb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fbicon" />
+
+            <ImageButton
+                android:id="@+id/btntw"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/twiicon" />
+
+            <ImageButton
+                android:id="@+id/btninsta"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/instaicon" />
+
+            <ImageButton
+                android:id="@+id/btnwww"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wwwicon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbUbicanciocita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Ubicación"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mapitaGas"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginBottom="40dp"
+            tools:context=".MapsActivity" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+

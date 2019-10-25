@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/lbTituloX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left"
+            android:text="Mapa de la ciudad"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_x="0px"
+        android:layout_y="80dp"
+        tools:context=".MapsActivity" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="177dp"
+        android:layout_height="121dp"
+        android:layout_x="22dp"
+        android:layout_y="400dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/infomapa" />
+
+</AbsoluteLayout>
+

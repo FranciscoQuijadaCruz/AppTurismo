@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.aplicacionturismo">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity
+            android:name=".MenuInferior"
+            android:label="@string/title_activity_menu_inferior"></activity>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@menu/navigation" />
+
+        <activity
+            android:name=".Tinaco"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+        android:name=".Mufer"
+        android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Plazita"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Parquecito"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Cochorit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Sahuaral"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Bahia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Piedra"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chaplin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HisGeneral"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Ferrocarril"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListActivityPersonajes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MariscosP"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DonMarcos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VivaEmp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Alexander"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+        android:name=".Construccion"
+        android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Introsita"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ListActivityLugares"
+            android:label="@string/title_activity_list" />
+        <activity
+            android:name=".ListActivityNaturaleza"
+            android:label="@string/title_activity_list_nat" />
+        <activity
+            android:name=".ListActivityGastronomia"
+            android:label="@string/title_activity_list_gas" />
+        <activity
+            android:name=".ListActivityHistoria"
+            android:label="@string/title_activity_list_his" />
+    </application>
+
+</manifest>
